@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:paddingStart="@dimen/layoutpadding"
+        android:paddingEnd="@dimen/layoutpadding">
 
     <TextView
             android:text="@string/theerapat_59160571"
@@ -18,4 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_on"
             android:id="@+id/star_image" android:contentDescription="@string/yellow_star"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/bioscro">
+        <TextView
+                android:text="@string/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/bio_text" style="@style/namesty"
+                android:lineSpacingMultiplier="1.2"/>
+    </ScrollView>
+
 </LinearLayout>
